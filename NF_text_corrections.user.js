@@ -26,6 +26,30 @@
         warmCoolLi.innerHTML = warmCoolLi.innerHTML.replace('50', '40');
     }
 
+    if (window.location.href === 'https://academy.nerdfitness.com/week-1-missions/') {
+        const measurementsLi = document.querySelector('.format_text ol li:nth-child(2)');
+        measurementsLi.innerHTML = measurementsLi.innerHTML.replace('25', '40');
+
+        const bigWhyLi = document.querySelector('.format_text ol li:nth-child(3)');
+        bigWhyLi.innerHTML = bigWhyLi.innerHTML.replace('25 XP for each )', '140 XP in total)');
+
+        const walkLi = document.querySelector('.format_text ol li:nth-child(4)');
+        walkLi.innerHTML = walkLi.innerHTML.replace('100', '60');
+
+        const foodLi = document.querySelector('.format_text ol li:nth-child(5)');
+        foodLi.innerHTML = foodLi.innerHTML
+            .replace('1 week', 'three days')
+            .replace('50', '60')
+            .replace('one week', 'three days to start with');
+
+        const epicP = document.querySelector('.format_text p:nth-child(9)');
+        epicP.innerHTML = epicP.innerHTML
+            .replace('EPIC 100', 'EPIC 205')
+            .replace('Level 2 by', 'Level 3 by')
+            .replace('250', '325')
+            .replace('3!', '4!');
+    }
+
     if (window.location.href === 'https://www.nerdfitness.com/level-up/my-epic-quest/') {
         document.title = 'My Epic Quest';
     }
