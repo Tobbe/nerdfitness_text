@@ -47,6 +47,16 @@
     }
 
     if (window.location.href === 'https://academy.nerdfitness.com/level-up/mindset/before-pictures/') {
+        const pointA = document.querySelector('.format_text p:nth-child(6)');
+
+        if (pointA.innerText.slice(0, 6) === 'So let') {
+            pointA.innerHTML =
+                `<strong>So let's start with Point A.</strong> You might not be
+                happy with where you're at, and that's okay. In fact, we're not
+                gonna dwell too much on Point A; that'd be like driving while
+                only looking in the rear-view mirror.`;
+        }
+
         const quote = document.querySelector('.format_text p:nth-child(15) em');
 
         if (quote.innerHTML.slice(1, 10) === 'But Steve') {
