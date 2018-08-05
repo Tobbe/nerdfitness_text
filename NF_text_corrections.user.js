@@ -97,4 +97,12 @@
             nbspP.parentNode.removeChild(nbspP);
         }
     }
+
+    if (window.location.href === 'https://academy.nerdfitness.com/level-up/mindset/start-your-epic-quest/') {
+        const nbspP = document.querySelector('.format_text p:nth-child(11)');
+
+        if (nbspP.innerHTML === '&amp;nbsp;') {
+            nbspP.parentNode.removeChild(nbspP);
+        }
+    }
 })();
