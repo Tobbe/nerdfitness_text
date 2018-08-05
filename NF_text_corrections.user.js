@@ -45,4 +45,14 @@
     if (window.location.href === 'https://www.nerdfitness.com/level-up/courses/') {
         document.title = 'Courses';
     }
+
+    if (window.location.href === 'https://academy.nerdfitness.com/level-up/mindset/before-pictures/') {
+        const quote = document.querySelector('.format_text p:nth-child(15) em');
+
+        if (quote.innerHTML.slice(1, 10) === 'But Steve') {
+            quote.innerHTML =
+                '"But Steve", you say, ' +
+                '"I already know what I look like! I look at myself every day!"';
+        }
+    }
 })();
