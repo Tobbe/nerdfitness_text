@@ -89,4 +89,12 @@
                 '"I already know what I look like! I look at myself every day!"';
         }
     }
+
+    if (window.location.href === 'https://academy.nerdfitness.com/level-up/mindset/art-of-goals/') {
+        const nbspP = document.querySelector('.format_text p:nth-child(28)');
+
+        if (nbspP.innerHTML === '&amp;nbsp;') {
+            nbspP.parentNode.removeChild(nbspP);
+        }
+    }
 })();
