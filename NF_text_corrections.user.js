@@ -124,5 +124,10 @@
         if (nbspP.innerHTML === '&amp;nbsp;') {
             nbspP.parentNode.removeChild(nbspP);
         }
+
+        const fullPaleo = document.querySelector('.format_text p:nth-child(4)');
+        fullPaleo.innerHTML = fullPaleo.innerHTML
+            .replace(' &nbsp;</strong>We', '</strong> We')
+            .replace('So if you', 'So even if you');
     }
 })();
