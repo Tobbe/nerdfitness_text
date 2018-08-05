@@ -129,5 +129,11 @@
         fullPaleo.innerHTML = fullPaleo.innerHTML
             .replace(' &nbsp;</strong>We', '</strong> We')
             .replace('So if you', 'So even if you');
+
+        const goalP = document.querySelector('.format_text p:nth-child(5)');
+        goalP.innerHTML = goalP.innerText;
+
+        const plateP = document.querySelector('.format_text p:nth-child(18)')
+        plateP.style = '';
     }
 })();
