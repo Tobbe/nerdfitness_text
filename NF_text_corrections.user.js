@@ -136,4 +136,12 @@
         const plateP = document.querySelector('.format_text p:nth-child(18)')
         plateP.style = '';
     }
+
+    if (window.location.href === 'https://academy.nerdfitness.com/level-up/mindset/custom-batcave/') {
+        const nbspP = document.querySelector('.format_text p:nth-child(61)');
+
+        if (nbspP.innerHTML === '&amp;nbsp;') {
+            nbspP.parentNode.removeChild(nbspP);
+        }
+    }
 })();
