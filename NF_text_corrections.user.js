@@ -105,4 +105,24 @@
             nbspP.parentNode.removeChild(nbspP);
         }
     }
+
+    if (window.location.href === 'https://academy.nerdfitness.com/level-up/nutrition/diet-level-up/') {
+        let nbspP = document.querySelector('.format_text p:nth-child(5)');
+
+        if (nbspP.innerHTML === '&nbsp;') {
+            nbspP.parentNode.removeChild(nbspP);
+        }
+
+        nbspP = document.querySelector('.format_text p:nth-child(35)');
+
+        if (nbspP.innerHTML === '&amp;nbsp;') {
+            nbspP.parentNode.removeChild(nbspP);
+        }
+
+        nbspP = document.querySelector('.format_text p:nth-child(43)');
+
+        if (nbspP.innerHTML === '&amp;nbsp;') {
+            nbspP.parentNode.removeChild(nbspP);
+        }
+    }
 })();
