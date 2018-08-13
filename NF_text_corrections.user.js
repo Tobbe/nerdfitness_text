@@ -90,6 +90,14 @@
         }
     }
 
+    if (window.location.href === 'https://academy.nerdfitness.com/level-up/nutrition/food-log/') {
+        const nbspP = document.querySelector('.format_text p:nth-child(30)');
+
+        if (nbspP.innerHTML === '&amp;nbsp;') {
+            nbspP.parentNode.removeChild(nbspP);
+        }
+    }
+
     if (window.location.href === 'https://academy.nerdfitness.com/level-up/mindset/art-of-goals/') {
         const nbspP = document.querySelector('.format_text p:nth-child(28)');
 
