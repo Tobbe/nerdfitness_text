@@ -50,6 +50,28 @@
             .replace('3!', '4!');
     }
 
+    if (window.location.href === 'https://academy.nerdfitness.com/week-two-missions/') {
+        const goalsAndEpicQuestLi = document.querySelector('.format_text ol li:nth-child(1)');
+        goalsAndEpicQuestLi.innerHTML = goalsAndEpicQuestLi.innerHTML.replace('25 XP each', '180 XP in total');
+
+        const goalsAndEpicQuestStrong = document.querySelector('.format_text ol li:nth-child(1) strong');
+        goalsAndEpicQuestLi.innerHTML = goalsAndEpicQuestLi.innerHTML.replace('> and <', '></strong> and <strong><');
+
+        const lootLi = document.querySelector('.format_text ol li:nth-child(2)');
+        lootLi.appendChild(document.createTextNode(' (25 XP)'));
+
+        const lootStrong = document.querySelector('.format_text ol li:nth-child(2) strong');
+        lootStrong.innerHTML = lootStrong.innerHTML.replace('&nbsp;(25 XP)', '');
+
+        const benchmarkLi = document.querySelector('.format_text ol li:nth-child(3)');
+        benchmarkLi.innerHTML = benchmarkLi.innerHTML.replace('&nbsp;(25 XP?)', '(25 XP)');
+
+        const dietLi = document.querySelector('.format_text ol li:nth-child(5)');
+        dietLi.innerHTML = dietLi.innerHTML
+            .replace('the&nbsp;NF', 'the NF')
+            .replace('passed!).<a', 'passed!). <a');
+    }
+
     if (window.location.href === 'https://www.nerdfitness.com/level-up/my-epic-quest/') {
         document.title = 'My Epic Quest';
     }
