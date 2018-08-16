@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nerd Fitness text corrections
 // @namespace    https://github.com/tobbe
-// @version      0.2
+// @version      0.3
 // @description  Corrects small text misstakes on NF
 // @license      MIT
 // @author       Tobbe
