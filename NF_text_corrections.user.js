@@ -134,6 +134,16 @@
         if (nbspP.innerHTML === '&amp;nbsp;') {
             nbspP.parentNode.removeChild(nbspP);
         }
+
+        const divXp1 = document.querySelector('.format_text div:nth-child(12)');
+        const pXp1 = document.createElement('p');
+        pXp1.innerHTML = divXp1.innerHTML;
+        divXp1.parentNode.replaceChild(pXp1, divXp1);
+
+        const divXp2 = document.querySelector('.format_text div:nth-child(13)');
+        const pXp2 = document.createElement('p');
+        pXp2.innerHTML = divXp2.innerHTML;
+        divXp2.parentNode.replaceChild(pXp2, divXp2);
     }
 
     if (window.location.href === 'https://academy.nerdfitness.com/level-up/nutrition/diet-level-up/') {
